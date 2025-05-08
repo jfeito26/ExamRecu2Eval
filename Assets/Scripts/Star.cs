@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class Star : MonoBehaviour
 {
-    
+    public void Start()
+    {
+        
+    }
+
+    public void Update()
+    {
+        
+    }
 }

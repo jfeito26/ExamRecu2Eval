@@ -12,6 +12,7 @@ public class MarioScript : MonoBehaviour
     public LayerMask groundMask;
     public AudioClip jumpClip, starClip;
     public int maxJumps = 2;
+    public AudioClip clip;
 
     private PlayerState currentstate;
 
@@ -135,6 +136,12 @@ public class MarioScript : MonoBehaviour
 
     //IEnumerator Invulnerable()
     //{
-        
+    //    AudioSource src = AudioManager.instance.PlayAudio(clip, invulnerable);
+    //    Time.timeScale = 0.03f;
+    //}
+
+    //public void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    GetComponent<Star>;
     //}
 }
