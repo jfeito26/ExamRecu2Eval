@@ -1765,7 +1765,7 @@ MonoBehaviour:
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: bcdc1e25b02c41f44bd36032ca03b914, type: 3}
   starClip: {fileID: 8300000, guid: 5bd063f7cef6a1b49a9a870aea94357a, type: 3}
-  maxJumps: 3
+  maxJumps: 2
 --- !u!70 &1940118826
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

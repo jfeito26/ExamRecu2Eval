@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -11,6 +12,8 @@ public class MarioScript : MonoBehaviour
     public LayerMask groundMask;
     public AudioClip jumpClip, starClip;
     public int maxJumps = 2;
+
+    private PlayerState currentstate;
 
     private Rigidbody2D rb;
     private SpriteRenderer _rend;
@@ -113,6 +116,16 @@ public class MarioScript : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
+    }
+
+    public PlayerState GetCurrentState()
+    {
+        return currentstate;
+    }
+
+    public Vector2 GetDirection()
+    {
+        return dir;
     }
 
     //public void StartInvulnerable()
